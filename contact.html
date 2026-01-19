@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Tores Fernando Harefa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Tores</div>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-en="Home" data-id="Beranda">Home</a></li>
+                <li><a href="projects.html" data-en="Projects" data-id="Proyek">Projects</a></li>
+                <li><a href="about.html" data-en="About" data-id="Tentang">About</a></li>
+                <li><a href="certificates.html" data-en="Certificates" data-id="Sertifikat">Certificates</a></li>
+                <li><a href="gallery.html" data-en="Gallery" data-id="Galeri">Gallery</a></li>
+                <li><a href="contact.html" class="active" data-en="Contact" data-id="Kontak">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" title="Change Theme">
+                    🎨
+                </button>
+                <button class="lang-toggle" id="langToggle" title="Change Language">
+                    <span class="flag">🇬🇧</span>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="page-header">
+        <h1 data-en="Get In Touch" data-id="Hubungi Saya" data-aos="zoom-in">Get In Touch</h1>
+        <p data-en="Let's connect and create something amazing together" data-id="Mari terhubung dan ciptakan sesuatu yang luar biasa bersama" data-aos="fade-up" data-aos-delay="200">Let's connect and create something amazing together</p>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-container">
+        <!-- Quick Contact Cards -->
+        <div class="quick-contact" data-aos="fade-up">
+            <h2 data-en="Quick Contact" data-id="Kontak Cepat">Quick Contact</h2>
+            <div class="contact-cards">
+                <!-- WhatsApp Card -->
+                <a href="https://wa.me/6282268423865" target="_blank" class="contact-card whatsapp" data-aos="flip-left" data-aos-delay="100">
+                    <div class="contact-icon">📱</div>
+                    <h3>WhatsApp</h3>
+                    <p data-en="Send me a message" data-id="Kirim pesan">Send me a message</p>
+                    <span class="contact-link" data-en="Chat Now →" data-id="Chat Sekarang →">Chat Now →</span>
+                </a>
+                <!-- Phone Card -->
+                <a href="tel:+6282268423865" class="contact-card phone" data-aos="flip-left" data-aos-delay="300">
+                    <div class="contact-icon">📞</div>
+                    <h3 data-en="Phone" data-id="Telepon">Phone</h3>
+                    <p data-en="Give me a call" data-id="Hubungi saya">Give me a call</p>
+                    <span class="contact-link" data-en="Call Now →" data-id="Telepon →">Call Now →</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- WhatsApp Quick Message Form -->
+        <div class="whatsapp-form-section" data-aos="fade-up" data-aos-delay="400">
+            <h2 data-en="Send WhatsApp Message" data-id="Kirim Pesan WhatsApp">Send WhatsApp Message</h2>
+            <p class="form-description" data-en="Fill the form below and click send to open WhatsApp with your message ready" data-id="Isi formulir di bawah dan klik kirim untuk membuka WhatsApp dengan pesan Anda siap">Fill the form below and click send to open WhatsApp with your message ready</p>
+            
+            <div class="wa-form-container">
+                <div class="form-group">
+                    <label for="waName" data-en="Your Name" data-id="Nama Anda">Your Name</label>
+                    <input type="text" id="waName" placeholder="John Doe" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="waEmail" data-en="Your Email (Optional)" data-id="Email Anda (Opsional)">Your Email (Optional)</label>
+                    <input type="email" id="waEmail" placeholder="john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="waSubject" data-en="Subject" data-id="Subjek">Subject</label>
+                    <select id="waSubject">
+                        <option value="General Inquiry" data-en="General Inquiry" data-id="Pertanyaan Umum">General Inquiry</option>
+                        <option value="Project Collaboration" data-en="Project Collaboration" data-id="Kolaborasi Proyek">Project Collaboration</option>
+                        <option value="Job Opportunity" data-en="Job Opportunity" data-id="Peluang Kerja">Job Opportunity</option>
+                        <option value="Question" data-en="Question" data-id="Pertanyaan">Question</option>
+                        <option value="Other" data-en="Other" data-id="Lainnya">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="waMessage" data-en="Your Message" data-id="Pesan Anda">Your Message</label>
+                    <textarea id="waMessage" rows="5" placeholder="Type your message here..." required></textarea>
+                </div>
+
+                <button type="button" class="wa-send-btn" id="waSendBtn">
+                    <span class="btn-icon">📱</span>
+                    <span data-en="Send via WhatsApp" data-id="Kirim via WhatsApp">Send via WhatsApp</span>
+                    <span class="btn-arrow">→</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="social-section" data-aos="fade-up" data-aos-delay="600">
+            <h2 data-en="Follow Me" data-id="Ikuti Saya">Follow Me</h2>
+            <div class="social-links-grid">
+                <a href="https://github.com/Ress09" target="_blank" class="social-link github">
+                    <span class="social-icon">💻</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://instagram.com/ress_harefa" target="_blank" class="social-link instagram">
+                    <span class="social-icon">📷</span>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://tiktok.com/@res093" target="_blank" class="social-link tiktok">
+                    <span class="social-icon">🎵</span>
+                    <span>TikTok</span>
+                </a>
+                <a href="https://facebook.com/Tores Ind" target="_blank" class="social-link facebook">
+                    <span class="social-icon">👥</span>
+                    <span>Facebook</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-section" data-aos="fade-up" data-aos-delay="800">
+            <h2 data-en="Contact Information" data-id="Informasi Kontak">Contact Information</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <h3 data-en="Location" data-id="Lokasi">Location</h3>
+                    <p data-en="Gunungsitoli, Pulau Nias, Indonesia" data-id="Gunungsitoli, Nias Island, Indonesia">Gunungsitoli, Pulau Nias, Indonesia</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">⏰</div>
+                    <h3 data-en="Availability" data-id="Ketersediaan">Availability</h3>
+                    <p data-en="Saturday - Sunday, 9 AM - 5 PM" data-id="Sabtu - Minggu, 9 Pagi - 5 Sore">Saturday - Sunday, 9 AM - 5 PM</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🌐</div>
+                    <h3 data-en="Languages" data-id="Bahasa">Languages</h3>
+                    <p data-en="Indonesian, English" data-id="Indonesia, Inggris">Indonesian, English</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p data-en="© 2026 Tores Fernando. All rights reserved." data-id="© 2026 Tores Fernando. Semua hak dilindungi.">&copy; 2026 Tores Fernando. All rights reserved.</p>
+            <p class="support" data-en="Supported by ♥ Angelica Xu" data-id="Didukung oleh ♥ Angelica Xu">Supported by <span class="heart">♥</span> Angelica Xu</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
